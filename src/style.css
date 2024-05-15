@@ -63,6 +63,7 @@ nav button:hover{
 
 
 #content{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,5 +104,83 @@ nav button:hover{
     font-weight: 700;
     color:#030712;
     font-size: 17px;
+}
+
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu>div{
+    background-color: #F4F2DE;
+    padding: 25px 40px 25px;
+    width: 700px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-auto-rows: 150px;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card{
+    background-color: #E9B384;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 150px;
+}
+
+.card img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.card-content h4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content span{
+    width: 40px;
+    display: inline-block;
+    padding: 0px 5px 0px;
+    background-color: #7C9D96;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content p{
+    font-size: 0.9rem;
+    padding-top: 15px;
+}
+
+.card-content button{
+    width: 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #7C9D96;
+    color:white;
 }
 

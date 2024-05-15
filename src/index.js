@@ -1,4 +1,5 @@
 import './style.css';
 import homePage from './home.js';
+import menuPage from './menu.js';
 
-homePage.load();
+menuPage.load();
