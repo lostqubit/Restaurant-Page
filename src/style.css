@@ -114,7 +114,7 @@ nav button:hover{
     flex-direction: column;
 }
 
-.menu h2{
+.menu>h2{
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -184,3 +184,106 @@ nav button:hover{
     color:white;
 }
 
+.contact{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact>h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact>div{
+    background-color: #F4F2DE;
+    padding: 25px 40px 25px;
+    width: 700px;
+    height: 100%;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info-container>h2{
+    display: flex;
+    gap: 10px;
+}
+
+#info-container>h2>img{
+    display: inline-block;
+    height: 2rem;
+}
+
+#info-container>div>p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 8px;
+}
+
+#info-container>div>p>img{
+    display: block;
+    height: 1.25rem;
+}
+
+#info-container>div>img{
+    height: 200px;
+    width: 300px;
+    display: block;
+    padding-left: 8px;
+    margin-top: 25px;
+}
+
+#form-container{
+    padding-left: 10px;
+}
+
+#form-container>h2{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#form-container>h2>img{
+    display: inline-block;
+    height: 2rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form>div{
+    display: flex;
+    flex-direction: column;
+}
+
+#form input{
+    width: 75%;
+}
+
+textarea {
+    width: 75%;
+    resize: none;
+}
+
+#form-container>button{
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #7C9D96;
+    color: white;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
