@@ -61,7 +61,6 @@ nav button:hover{
     opacity: 0.5;
 }
 
-
 #content{
     width: 100%;
     display: flex;
@@ -104,6 +103,7 @@ nav button:hover{
     font-weight: 700;
     color:#030712;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .menu{
