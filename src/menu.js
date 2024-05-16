@@ -1,8 +1,6 @@
 const menuPage = (() => {
     const body = document.querySelector("body");
     const parentDiv = document.querySelector("#content");
-    const container = document.createElement("div");
-    container.setAttribute("class","menu");
     const menuButton = document.querySelector("#menu-btn");
 
     const names = ["Sandwich","Burger","Noodles","Pasta","Pizza","Tacos","Chicken Nuggets","Chicken Wings","Fruit Mix","Milkshake"];
@@ -21,6 +19,9 @@ const menuPage = (() => {
     ];
 
     const createContent = () => {
+        const container = document.createElement("div");
+        container.setAttribute("class","menu");
+
         const heading = document.createElement("h2");
         heading.innerText = "Menu";
 
@@ -56,7 +57,7 @@ const menuPage = (() => {
             cards.push(card);
         }
 
-        return {heading,menuDiv,cards};
+        return {container,heading,menuDiv,cards};
     };
 
     const load = () =>{
@@ -64,7 +65,7 @@ const menuPage = (() => {
         menuButton.style.textDecoration = "underline";
         body.style.backgroundImage = "none";
         parentDiv.style.backgroundColor = "#A1CCD1";
-        const {heading,menuDiv,cards} = createContent();
+        const {container,heading,menuDiv,cards} = createContent();
 
         container.appendChild(heading);
         for(let card of cards) menuDiv.appendChild(card);

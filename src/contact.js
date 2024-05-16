@@ -8,8 +8,6 @@ import mapImg from './images/map.png';
 const contactPage = (() => {
     const body = document.querySelector("body");
     const parentDiv = document.querySelector("#content");
-    const container = document.createElement("div");
-    container.setAttribute("class","contact");
     const contactButton = document.querySelector("#contact-btn");
 
     const createContactInfo = () => {
@@ -103,6 +101,9 @@ const contactPage = (() => {
     };
 
     const createContent = () => {
+        const container = document.createElement("div");
+        container.setAttribute("class","contact");
+
         const heading = document.createElement("h2");
         heading.innerText = "Contact Us";
 
@@ -141,7 +142,7 @@ const contactPage = (() => {
         contactDiv.appendChild(infoContainer);
         contactDiv.appendChild(formContainer);
 
-        return {heading,contactDiv,form};
+        return {container,heading,contactDiv,form};
     };
 
     const load = () => {
@@ -150,7 +151,7 @@ const contactPage = (() => {
         body.style.backgroundImage = "none";
         parentDiv.style.backgroundColor = "#A1CCD1";
 
-        const {heading,contactDiv,form} = createContent();
+        const {container,heading,contactDiv,form} = createContent();
         
         container.appendChild(heading);
         container.appendChild(contactDiv);
